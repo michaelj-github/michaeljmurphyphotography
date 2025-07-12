@@ -3,75 +3,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael J. Murphy Photography</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: url('hero-image.jpg') center/cover no-repeat;
-            width: 100%;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-            text-align: center;
-            padding: 0 20px;
-        }
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        section {
-            max-width: 800px;
-            padding: 20px;
-            text-align: center;
-        }
-        section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-        .contact-button {
-            display: inline-block;
-            background-color: #333;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 1em;
-            transition: background-color 0.3s;
-        }
-        .contact-button:hover {
-            background-color: #555;
-        }
-        footer {
-            padding: 10px;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
+    <title>Michael J Murphy Photography</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Michael J. Murphy Photography</h1>
+        <h1>Michael J Murphy Photography</h1>
     </header>
     <section>
-        <p>Welcome to Michael J. Murphy Photography, where I capture the serene beauty of nature, birds, and landscapes around Cincinnati and beyond. Join me on this journey as I share moments that inspire peace, curiosity, and connection with the natural world.</p>
-        <a href="mailto:michaeljmurphyconsulting@gmail.com" class="contact-button">Contact Me</a>
+        <p>Welcome to my photography website, where I capture the serene beauty of nature, birds, and landscapes. Join me on this journey as I share moments that inspire peace, curiosity, and connection with the natural world.</p>
+        <a href="about.html" class="contact-button">About Me</a>
+        <!-- <a href="mailto:michaeljmurphyconsulting@gmail.com" class="contact-button">Contact Me</a> -->
     </section>
     <footer>
-        © 2025 Michael J. Murphy Photography
+        © <span id="year"></span> Michael J Murphy Photography
     </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
 <!-- This is a simple HTML page for Michael J. Murphy Photography -->
