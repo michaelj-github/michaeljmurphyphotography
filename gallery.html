@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Michael J Murphy Photography</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .gallery-section {
+      margin: 40px 0;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 10px;
+    }
+    .image-grid img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      height: auto;
+    }
+    footer {
+        padding: 10px;
+        font-size: 0.9em;
+        color: #777;
+        text-align: center;
+        margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Photo Gallery</h1>
+
+  <section class="gallery-section" id="birds">
+    <h2>Birds</h2>
+    <p>Here's some of the birds that come to the feeder in my back yard. I don't have my zoom lens yet so these are taken with a 12-40mm lens and cropped.</p>
+    <div class="image-grid">
+      <!-- <img src="gallery/birds/cardinal.jpg" alt="Cardinal"> -->
+      <img src="gallery/birds/P7130004-crop.jpg" alt="Cardinal">
+      <img src="gallery/birds/P8020080-crop.jpg" alt="GoldFinch">
+      <img src="gallery/birds/P8020075-crop.jpg" alt="GoldFinch">
+      <img src="gallery/birds/P8020056-crop.jpg" alt="Woodpecker">
+      <img src="gallery/birds/P8020040-crop.jpg" alt="Woodpecker">
+      <img src="gallery/birds/P8020001-crop.jpg" alt="BlueJay">
+    </div>
+  </section>
+
+  <!-- <section class="gallery-section" id="landscapes">
+    <h2>Landscapes</h2>
+    <div class="image-grid">
+      <img src="gallery/landscapes/sunrise.jpg" alt="Sunrise">
+      <img src="gallery/landscapes/river.jpg" alt="River">
+    </div>
+  </section> -->
+
+  <section class="gallery-section" id="flowers">
+    <h2>Flowers and Plants</h2>
+    <div class="image-grid">
+      <!-- <img src="gallery/flowers/sunflower.jpg" alt="Sunflower"> -->
+      <!-- <img src="gallery/flowers/trillium.jpg" alt="Trillium"> -->
+      <!-- <img src="gallery/flowers/PXL_20210517_172020051.jpg" alt="What is this?"> -->
+      <img src="gallery/flowers/P7090006-thumb.jpg" alt="What is this?">
+      <!-- <img src="gallery/flowers/PXL_20210516_174705702.jpg" alt="What is this?"> -->
+    </div>
+  </section>
+
+<a href="index.html">← Back to Home</a>
+
+<footer>
+    © <span id="year"></span> Michael J Murphy Photography
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
